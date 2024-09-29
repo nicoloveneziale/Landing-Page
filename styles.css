@@ -1,8 +1,6 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #E5E7EB;
-    z-index: -1;
-    position: relative;
 }
 
 header{
@@ -151,18 +149,70 @@ footer{
 }
 
 .signup-container{
-    background-color: #67686b;
+    background-color: #1c1c20;
     height: 70vh;
     width: 50vh;
-    margin: auto;
+    margin: 17vh auto 25vh auto;
     border-radius: 5vh;
     z-index: 100;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+
+.signup-container h2{
+    color: #d3d8e2;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 10vh;
+}
+
+.signup-container input{
+    width: 35vh;
+    height: 3vh;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 3px;
+    margin: 15px auto;
+}
+
+.signup-container button{
+    width: 35vh;
+    height: 5vh;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.signup-container #back-btn{
+    background: none;
+    color: #E5E7EB;
+    text-decoration: underline;
+    font-size: 17px;
 }
 
 .hidden{
     display: none;
+}
+
+.blur{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(13px);
+    position: absolute;
+    background-size: cover;
+}
+
+.no-scroll{
+    height: 100%;
+    overflow: hidden;
 }
